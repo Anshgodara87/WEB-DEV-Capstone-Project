@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Portfolio</title>
+
+    <!-- Internal CSS -->
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        /* Header */
+        header {
+            background-color: #222;
+            color: white;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 10px;
+        }
+
+        nav a:hover {
+            color: #00bcd4;
+        }
+
+        /* Home Section */
+        .home {
+            background-color: #dff6ff;
+            text-align: center;
+            padding: 100px 20px;
+        }
+
+        .home h1 {
+            font-size: 40px;
+            margin-bottom: 15px;
+        }
+
+        .home span {
+            color: #0097a7;
+        }
+
+        .home p {
+            margin-top: 15px;
+        }
+
+        .btn {
+            display: inline-block;
+            background-color: #0097a7;
+            color: white;
+            padding: 12px 25px;
+            text-decoration: none;
+            margin-top: 20px;
+            border-radius: 5px;
+        }
+
+        /* Common Sections */
+        section {
+            padding: 50px 10%;
+            text-align: center;
+        }
+
+        h2 {
+            color: #0097a7;
+            margin-bottom: 25px;
+        }
+
+        /* Skills */
+        .skills {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .skills div {
+            background-color: #0097a7;
+            color: white;
+            padding: 20px 35px;
+            border-radius: 8px;
+        }
+
+        /* Projects */
+        .projects {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .card {
+            background-color: white;
+            width: 250px;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 3px 10px #ccc;
+        }
+
+        .card h3 {
+            color: #0097a7;
+            margin-bottom: 15px;
+        }
+
+        /* Contact */
+        #contact {
+            background-color: #dff6ff;
+            line-height: 2;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #222;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        /* Responsive */
+        @media (max-width: 600px) {
+            header {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            nav a {
+                display: inline-block;
+                margin: 5px;
+            }
+
+            .home h1 {
+                font-size: 30px;
+            }
+
+            .projects {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <h2>My Portfolio</h2>
+
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <!-- Home -->
+    <section class="home" id="home">
+        <h1>Hello, I'm <span>Anshul</span></h1>
+        <h3>Student & Web Developer</h3>
+        <p>Welcome to my personal portfolio website.</p>
+        <a href="#about" class="btn">Know More</a>
+    </section>
+
+    <!-- About -->
+    <section id="about">
+        <h2>About Me</h2>
+        <p>
+            I am a student who loves learning new technologies
+            and creating websites. I am interested in web
+            development and programming.
+        </p>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills">
+        <h2>My Skills</h2>
+
+        <div class="skills">
+            <div>HTML</div>
+            <div>CSS</div>
+            <div>JavaScript</div>
+            <div>Python</div>
+        </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects">
+        <h2>My Projects</h2>
+
+        <div class="projects">
+            <div class="card">
+                <h3>Portfolio Website</h3>
+                <p>A personal website made using HTML and CSS.</p>
+            </div>
+
+            <div class="card">
+                <h3>Calculator</h3>
+                <p>A simple calculator project.</p>
+            </div>
+
+            <div class="card">
+                <h3>Student Management</h3>
+                <p>A basic student management project.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <p>Email: anshulgodara87@gmail.com</p>
+        <p>Phone: 9716319800</p>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2026 Anshul | Student Portfolio</p>
+    </footer>
+
+</body>
+</html>
+
+
